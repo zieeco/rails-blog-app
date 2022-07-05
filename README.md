@@ -1,24 +1,82 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Blog App
 
-Things you may want to cover:
+> This app is a simple app which mimics a real world blog website where users can post comments and see the comments made by other users.
 
-* Ruby version
+## Built With
 
-* System dependencies
+- Ruby
+- Ruby on Rails
 
-* Configuration
+## Getting Started
 
-* Database creation
+To get a local copy up and running follow these simple example steps.
 
-* Database initialization
+### Prerequisites
 
-* How to run the test suite
+##### Step 0: Prerequisites
+- A text editor [Vscode](https://code.visualstudio.com/download)
 
-* Services (job queues, cache servers, search engines, etc.)
+##### Step 1: Downloading and Installing `ruby` and `ruby on rails`
 
-* Deployment instructions
+[MacOs, windows and Linux](https://www.ruby-lang.org/en/downloads/) # download ruby
 
-* ...
+[install ruby on rails](https://guides.rubyonrails.org/getting_started.html#creating-a-new-rails-project-installing-rails)
+
+<details>
+<summary><b>Clone the repository</b></summary>
+
+- Clone this repository or download the Zip folder:
+
+~~~ bash
+https://github.com/zieeco/rails-blog-app.git
+
+~~~
+
+1. Navigate to the location of the folder in your machine:
+
+~~~
+
+you@your-Pc-name:~$ cd <folder>
+~~~
+
+</details>
+
+<details>
+<summary><b>Usage</b></summary>
+
+**Get the Gem files and node_modules**
+
+~~~ bash
+bundle install
+npm install
+~~~
+
+</details>
+
+## Author
+
+👤 **zieeco**
+
+- GitHub: [@zieeco](https://github.com/zieeco)
+- Twitter [@zieecodes](https://twitter.com/zieecodes)
+- LinkedIn: [Isaac Imaobong Samuel](https://www.linkedin.com/in/isaac-imaobong-samuel)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/zieeco/rails-blog-app/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to [Microverse](https://bit.ly/MicroverseTN) for providing the project requirements and for the distribution of tasks.
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.

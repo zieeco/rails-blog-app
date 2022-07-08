@@ -55,6 +55,23 @@ npm install
 
 </details>
 
+
+<details>
+<summary><b>Run test</b></summary>
+
+**Run all test**
+
+~~~ bash
+rspec # run all test
+rspec spec/models/user_spec.rb # test for the User model
+rspec spec/models/post_spec.rb # test for the Post model
+rspec spec/models/comment_spec.rb # test for the Comment model
+rspec spec/models/like_spec.rb # test for the Like model
+~~~
+
+</details>
+
+
 ## Author
 
 👤 **zieeco**

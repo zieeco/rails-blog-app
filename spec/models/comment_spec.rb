@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
-  describe 'Testing the Comment model' do
+  describe 'Validation for the Comment model' do
     before(:example) do
       @user = User.new(name: 'zieeco', photo: 'photo_link', bio: 'Developer From Nigeria')
       @post = Post.new(author: @user, title: 'My Title', comments_counter: 0, likes_counter: 0)

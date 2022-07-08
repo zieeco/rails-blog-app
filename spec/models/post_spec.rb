@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Post, type: :model do
-  describe 'testing the Post model' do
+  describe 'Validation for the Post model' do
     before(:example) do
       @user = User.new(id: 1, name: 'zieeco', photo: 'photo_link', bio: 'Full Stack Developer')
       @post = Post.new(author: @user, title: 'post 1', text: 'post content', comments_counter: 0, likes_counter: 0)

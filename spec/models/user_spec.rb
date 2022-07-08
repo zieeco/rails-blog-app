@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  describe 'User model' do
+  describe 'Validation for the User model' do
     before(:example) do
       @user = User.new(name: 'Isaac', photo: 'photo_link', bio: 'my bio')
     end

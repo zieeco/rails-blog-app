@@ -51,6 +51,7 @@ gem 'bootsnap', require: false
 # gem 'image_processing', '~> 1.2'
 
 group :test do
+  gem 'rails-controller-testing'
   gem 'rspec-rails'
 end
 

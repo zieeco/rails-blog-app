@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  /* font-family: 'Balsamiq Sans', cursive; */
+  font-family: 'Ubuntu', sans-serif;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+button {
+  border: none;
+  background: transparent;
+  border-radius: 0;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}

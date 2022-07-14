@@ -1,0 +1,167 @@
+body {
+  background: #f5f5f5;
+}
+
+header {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+header nav ul li a {
+  font-weight: 900;
+}
+
+header nav ul li a span.logo {
+  font-size: 2rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.p-sm {
+  padding: 1.5rem;
+}
+
+.d-flex-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-con {
+  width: 3.75rem;
+}
+
+.av {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.user-li {
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.user-bdy {
+  width: 100%;
+  padding: 0.5rem;
+  align-items: center;
+}
+
+.user-bdy .user-pc {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.user-bdy .user-pc:hover {
+  text-decoration: underline;
+}
+
+.post-count {
+  display: flex;
+  align-self: flex-end;
+  justify-content: flex-end;
+  font-size: 13.3333px;
+  margin-top: 0.7rem;
+}
+
+.m-sm {
+  margin: 1.5rem;
+}
+
+.user-bio_div {
+  font-size: 0.8rem;
+  color: #999;
+  padding: 0.5rem;
+}
+
+.user-bio_div h3,
+.user-post-li p {
+  margin-bottom: 0.5rem;
+}
+
+.mb-sm {
+  margin-bottom: 0.5rem;
+}
+
+.user-post-li {
+  align-items: flex-start;
+}
+
+.user-post-li .sp_div {
+  align-self: flex-end;
+  justify-content: flex-end;
+}
+
+.mr-sm {
+  margin-right: 0.5rem;
+}
+
+.border {
+  border: 1px solid #ccc;
+}
+
+.see-all-post {
+  font-size: 0.8rem;
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 999rem;
+  background-color: black;
+  margin: 0.5rem auto;
+}
+
+footer {
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 1rem;
+  margin: 0.3em 0;
+  background-color: #272a31;
+  filter: grayscale(100%) contrast(30%);
+  color: #fff;
+}
+
+.fs-sm {
+  font-size: 1rem;
+}
+
+.mb-section {
+  margin-bottom: 4rem;
+}
+
+.post-detail {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  align-items: flex-start;
+}
+
+.post-detail-bdy {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.post-detail-bdy h3 {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.mb-sm2 {
+  margin-bottom: 1rem;
+}
+
+.color {
+  color: #999;
+}
+
+.sp-fs {
+  font-size: 13.3333px;
+  color: #999;
+}
+
+.post-text {
+  font-size: 0.8rem;
+  text-align: justify;
+}

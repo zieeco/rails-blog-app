@@ -6,11 +6,23 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application",
+    'http://fonts.googleapis.com/css?family=Ubuntu',
+    'https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap',
+    media: 'all',  "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
-    <%= yield %>
+    <header class="d-flex">
+      <nav class="d-flex">
+        <ul class="d-flex">
+          <li><a href="/"> <span class="logo">📚</span> Blog </a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>

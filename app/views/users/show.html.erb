@@ -1,1 +1,37 @@
-<h2>User Details</h2>
+<section class="p-sm d-flex-2 mb-section">
+  <div class="user-li d-flex m-smm border">
+    <div class="img-con">
+      <img class="av" src="<%= @user.photo %>" alt="User Avatar">
+    </div>
+
+    <div class="user-show user-bdy d-flex">
+      <div class="show-pc user-pc d-flex">
+        <h2 class="fs-sm"><%= @user.name %></h2>
+        <p class="post-count">Number of posts: <%= @user.posts_counter || 0 %></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="user-bio_div border mb-sm">
+    <h3>Bio</h3>
+    <p><%= @user.bio%></p>
+  </div>
+
+  <div class="">
+    <ul class="user-post-cont d-flex-2">
+      <% @user.recent_posts.each_with_index do |post, index| %>
+        <li class="user-post-li user-bio_div border mb-sm d-flex-2">
+          <h3>Post #<%= index + 1 %> </h3>
+          <p><%= post.text %></p>
+          <div class="sp_div d-flex">
+          <span class="comments mr-sm">Comments: <%= post.comments_counter || 0 %>, </span>
+          <span class="likes">Likes:<%= post.likes_counter || 0 %></span>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+
+  <a class="see-all-post d-flex border" href="<%= @user.id %>/posts">See all posts</a>
+
+</section>

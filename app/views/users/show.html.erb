@@ -34,4 +34,8 @@
 
   <a class="see-all-post d-flex border" href="<%= @user.id %>/posts">See all posts</a>
 
+  <button class="see-all-post d-flex border">
+    <%= link_to "Create post", new_user_post_path(@user)  %>
+  </button>
+
 </section>

@@ -1,6 +1,4 @@
 class Post < ApplicationRecord
-  after_save :update_post_counter
-
   belongs_to :author, class_name: 'User'
   has_many :comments
   has_many :likes

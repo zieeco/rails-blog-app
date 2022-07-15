@@ -9,6 +9,13 @@
     </div>
     <p class="post-text color"> <%= @post.text %> </p>
 
+    <div>
+      <%= form_with model: @like, url: "/users/#{@user.id}/posts/#{@post.id}/likes", scope: :like do |form|%>
+          <%= form.submit 'Like post', class: 'submit' %>
+        <%end%>
+    </div>
+  </div>
+
   <ul class="comment d-flex-2 border">
     Comments:
     <% @comments.each do |comment| %>

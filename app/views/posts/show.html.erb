@@ -1,18 +1,30 @@
 <section class="p-sm mb-section">
   <div class="post-detail border d-flex-2">
     <div class="post-detail-bdy d-flex">
-      <h3>Post #<%= @post.id%> by <%= @post.author.name %></h3>
+      <h3>Post #<%= @post.id %> by <%= @post.author.name %></h3>
       <div class="d-flex mb-sm2">
-        <span class="comments mr-sm sp-fs">Comments: <%= @post.comments_counter || 0%>, </span>
+        <span class="comments mr-sm sp-fs">Comments: <%= @post.comments_counter || 0 %>, </span>
         <span class="likes sp-fs">Likes: <%= @post.likes_counter || 0 %> </span>
       </div>
     </div>
     <p class="post-text color"> <%= @post.text %> </p>
-  </div>
+
   <ul class="comment d-flex-2 border">
     Comments:
     <% @comments.each do |comment| %>
-      <li class="user-bio_div d-flex-2"><%= comment.author.name%>: <%= comment.text %></li>
+      <li class="user-bio_div d-flex-2"><%= comment.author.name %>: <%= comment.text %></li>
     <% end %>
   </ul>
 </section>
+
+<section>
+  <h2>Add a comment</h2>
+  <%= form_with model: @comment, url: "/users/#{@user.id}/posts/#{@post.id}/comments", scope: :comment do |form| %>
+    <div>
+      <%= form.label :text, class: "form-label" %>
+      <%= form.text_field :text, required: true, autofocus: true, placeholder: 'Leave a comment', class: "form-input" %>
+    </div>
+    <%= form.submit "Comment", class: "form-button" %>
+  <% end %>
+</section>
+

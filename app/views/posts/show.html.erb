@@ -10,7 +10,7 @@
     <p class="post-text color"> <%= @post.text %> </p>
 
     <div>
-      <%= form_with model: @like, url: "/users/#{@user.id}/posts/#{@post.id}/likes", scope: :like do |form|%>
+      <%= form_with model: @like, url:  user_post_likes_path(@user, @post) do |form|%>
           <%= form.submit 'Like post', class: 'submit' %>
         <%end%>
     </div>
@@ -19,19 +19,13 @@
   <ul class="comment d-flex-2 border">
     Comments:
     <% @comments.each do |comment| %>
-      <li class="user-bio_div d-flex-2"><%= comment.author.name %>: <%= comment.text %></li>
+      <li class="user-bio_div d-flex-2"><%= @user.name %>: <%= comment.text %></li>
     <% end %>
   </ul>
 </section>
 
-<section>
-  <h2>Add a comment</h2>
-  <%= form_with model: @comment, url: "/users/#{@user.id}/posts/#{@post.id}/comments", scope: :comment do |form| %>
-    <div>
-      <%= form.label :text, class: "form-label" %>
-      <%= form.text_field :text, required: true, autofocus: true, placeholder: 'Leave a comment', class: "form-input" %>
-    </div>
-    <%= form.submit "Comment", class: "form-button" %>
-  <% end %>
-</section>
+
+  <button class="see-all-post d-flex border">
+    <%= link_to "Create new comment", new_user_post_comment_path(@user, @post) %>
+  </button>
 

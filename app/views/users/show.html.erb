@@ -32,10 +32,15 @@
     </ul>
   </div>
 
-  <a class="see-all-post d-flex border" href="<%= @user.id %>/posts">See all posts</a>
+  <%# <%= link_to "Create post", new_post_path(@user)  %>
 
   <button class="see-all-post d-flex border">
-    <%= link_to "Create post", new_user_post_path(@user)  %>
+    <%= link_to "see all post", user_posts_path(@user) %>
+  </button>
+
+
+  <button class="see-all-post d-flex border">
+    <%= link_to "Create post", new_user_post_path(@user) %>
   </button>
 
 </section>

@@ -1,0 +1,14 @@
+<nav class="sticky-top navbar-dark bg-dark">
+      <ul class="nav-list d-flex align-items-center justify-content-between mb-0">
+        <li class="navbar-brand"> <%= link_to "📚 Blog", root_path, class: "home-blog" %> </li>
+        <div class="d-flex align-items-center justify-content-between">
+          <% if user_signed_in? %>
+            <li class="navbar-brand fs-6"> Welcome <span style=""><%= current_user.name.capitalize %>!</span></li>
+            <li class="navbar-brand fs-6"> <%= button_to "Log Out", destroy_user_session_path, method: :delete, class: "btn btn-outline-secondary " %></li>
+          <% else %>
+            <li class="navbar-brand fs-6"> <%= link_to "Sign In", new_user_session_path, method: :delete, class: "btn btn-outline-secondary " %></li>
+            <li class="navbar-brand fs-6"> <%= link_to "Sign Up", new_user_registration_path, method: :delete, class: "btn btn-outline-secondary " %></li>
+          <% end %>
+        </div>
+      </ul>
+    </nav>

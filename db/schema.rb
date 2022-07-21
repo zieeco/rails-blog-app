@@ -46,7 +46,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_19_103138) do
 
   create_table "users", force: :cascade do |t|
     t.string "name"
-    t.string "photo"
+    t.string "photo", default: "https://image.shutterstock.com/image-vector/avatar-glyph-flat-vector-icon-600w-1471589723.jpg"
     t.text "bio"
     t.integer "posts_counter", default: 0
     t.datetime "created_at", null: false

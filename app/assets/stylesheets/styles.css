@@ -2,23 +2,6 @@ body {
   background: #f5f5f5;
 }
 
-header {
-  width: 100%;
-  padding: 1.5rem;
-}
-
-header nav ul li a {
-  font-weight: 900;
-}
-
-header nav ul li a span.logo {
-  font-size: 2rem;
-}
-
-.d-flex {
-  display: flex;
-}
-
 .p-sm {
   padding: 1.5rem;
 }

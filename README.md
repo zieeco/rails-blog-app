@@ -79,9 +79,8 @@ rspec spec/models/like_spec.rb # test for the Like model
 - GitHub: [@zieeco](https://github.com/zieeco)
 - Twitter [@zieecodes](https://twitter.com/zieecodes)
 - LinkedIn: [Isaac Imaobong Samuel](https://www.linkedin.com/in/isaac-imaobong-samuel)
-  
-  👤 **Ciragane Nicole**
 
+👤 **Ciragane Nicole**
 - GitHub: [@ciraganenicole](https://github.com/ciraganenicole)
 - Twitter: [@CiraganeN](https://twitter.com/CiraganeN)
 - LinkedIn: [CiraganeNicole](https://www.linkedin.com/in/nicole-ciragane-19a3071bb/)

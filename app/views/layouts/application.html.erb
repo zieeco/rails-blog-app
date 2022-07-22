@@ -21,11 +21,7 @@
       <%= render partial: "shared/navbar" %>
     </header>
 
-    <% flash.each do |name, msg| %>
-      <div class="alert alert-success notice" role="alert">
-        <p><%= msg %></p>
-      </div>
-    <% end %>
+    <%= render partial: "shared/alert" %>
 
     <main class="container">
       <%= yield %>

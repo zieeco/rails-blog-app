@@ -16,7 +16,7 @@
     <% @posts.each_with_index do |post, index| %>
       <%= link_to  user_post_path(@user, post.id) do %>
         <div class="post-user-each user-post-li user-bio_div border mb-sm d-flex-2">
-          <h3>Post #<%= index + 1 %></h3>
+          <h3>Post #<%= index + 1 %> | <span style="color: black;"><%= post.title %></span> </h3>
           <p><%= post.text%></p>
           <div class="sp_div d-flex">
             <span class="comments  mr-sm">Comments: <%= post.comments_counter || 0 %>, </span>

@@ -67,6 +67,7 @@ rspec spec/models/user_spec.rb # test for the User model
 rspec spec/models/post_spec.rb # test for the Post model
 rspec spec/models/comment_spec.rb # test for the Comment model
 rspec spec/models/like_spec.rb # test for the Like model
+rspec spec/features/ # test all features
 ~~~
 
 </details>

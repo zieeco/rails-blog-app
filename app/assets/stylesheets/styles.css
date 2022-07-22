@@ -34,11 +34,16 @@ body {
 
 .user-bdy .user-pc {
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
 .user-bdy .user-pc:hover {
   text-decoration: underline;
+}
+
+h3 {
+  font-size: 0.92rem;
 }
 
 .post-count {
@@ -90,7 +95,7 @@ body {
   color: #fff;
   padding: 0.8rem;
   border-radius: 999rem;
-  background-color: black;
+  background-color: #999;
   margin: 0.5rem auto;
 }
 
@@ -115,6 +120,11 @@ footer {
   margin-bottom: 4rem;
 }
 
+.sc-btn {
+  display: flex;
+  margin: 0 auto;
+}
+
 .post-detail {
   padding: 0.5rem;
   margin-bottom: 1rem;
@@ -133,6 +143,11 @@ footer {
 
 .mb-sm2 {
   margin-bottom: 1rem;
+}
+
+ol,
+ul {
+  padding-left: 0;
 }
 
 .color {

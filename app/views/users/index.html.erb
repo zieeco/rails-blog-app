@@ -7,10 +7,10 @@
         </div>
 
         <div class="user-bdy d-flex">
-          <a class="user-pc d-flex" title="view user details" href="/users/<%= user.id %>">
+          <%= link_to user_path(user.id), class: 'user-pc d-flex', title: 'view user details' do %>
             <h2 class="fs-sm"><%= user.name%></h2>
             <p class="post-count">Number of posts: <%= user.posts_counter || 0 %> </p>
-          </a>
+          <% end %>
         </div>
       </li>
     <% end %>

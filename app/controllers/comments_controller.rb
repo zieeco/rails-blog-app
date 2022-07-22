@@ -14,7 +14,7 @@ class CommentsController < ApplicationController
       @comment.update_comments_counter
       redirect_to user_post_path(@user.id, @post.id), notice: 'Comment created successfully!'
     else
-      redirect_to user_post_path(@user.id, @post.id), notice: 'Sorry! something went wrong!'
+      redirect_to user_post_path(@user.id, @post.id), alert: 'Sorry! something went wrong!'
     end
   end
 
